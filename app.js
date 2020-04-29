@@ -15,7 +15,8 @@ var express=require('express'),
 var commentRoutes=require('./routes/comments'),
 	campgroundRoutes=require('./routes/campgrounds'),
 	indexRoutes=require('./routes/index');
-	
+
+// mongoose.connect('mongodb://localhost/yelp_camp')
 mongoose.connect('mongodb+srv://course:Sakshi@cluster0-cj15q.mongodb.net/yelp_camp?retryWrites=true&w=majority'
 ,{
 	useNewUrlParser: true,
