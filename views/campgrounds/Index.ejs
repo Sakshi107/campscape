@@ -1,0 +1,34 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+	<header class="jumbotron">
+		<div class="container">
+			<h1>
+				<i class="fas fa-campground"></i>Welcome to Campscape!
+			</h1>
+			<p>
+				View all the amazing campgrounds available in the world!!!
+			</p>
+			<a class="btn btn-large btn-primary" href="/campgrounds/new">Add campgrounds</a>
+		</div>
+	</header>
+	<div class="row text-center">
+	<% campgrounds.forEach(function(camp){%>
+		<div class="col-md-4 col-sm-6">
+			<div class="thumbnail">
+				<div class="image_c">
+					<img src="<%= camp.image%>">
+				</div>
+				<div class="caption">
+					<h4><%=camp.name %></h4>
+				</div>
+				<p>
+					<a href="/campgrounds/<%= camp._id %>" class="btn btn-primary">More info</a>
+				</p>
+			</div>
+		</div>
+	<% }); %>
+	</div>
+</div>
+<h4 id="footer" style="color:white;text-align:center;">Made with <i style="color:red" class="fas fa-heart"></i> by Sakshi</h4>s
+<%- include("../partials/footer") %>

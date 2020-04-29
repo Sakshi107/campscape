@@ -1,0 +1,82 @@
+
+body {
+  background-color: #000;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+}
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 25s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://blog.ticketmaster.com/wp-content/uploads/nocturnal-camping-night.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://dmgupcwbwy0wl.cloudfront.net/system/images/000/234/640/550aef7cb5ba76f4fdb7cc9a30afe7ad/x1000gt/winter-camping.jpg?1575468007);
+  animation-delay: 5s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://storage.googleapis.com/chile-travel-static-content/2019/07/camping-portada-1.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://www.pc.gc.ca/en/pn-np/nb/fundy/activ/camping/arrierepays-backcountry//pcacdn.azureedge.net/-/media/pn-np/nb/fundy/WET4/og-images-555x290/camping-arriere-pays-backcountry-555.jpg?modified=20200310175518);
+  animation-delay: 15s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url( https://www.holidify.com/images/cmsuploads/compressed/tent-1208201_1920_20190212172038.jpg);
+  animation-delay: 20s; 
+}
+
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+.no-cssanimations .slideshow li {
+    opacity: 1;
+}
