@@ -12,8 +12,11 @@ body {
 
 #landing-header h1 {
   color: #fff;
+  font-size:60px;
 }
-
+.btn{
+  background-color: #1656a0 !important;
+}
 .slideshow { 
   position: fixed;
   width: 100%;
@@ -37,7 +40,7 @@ body {
   background-repeat: no-repeat;
   opacity: 0;
   z-index: 0;
-  animation: imageAnimation 25s linear infinite; 
+  animation: imageAnimation 10s linear infinite; 
 }
 
 .slideshow li:nth-child(1) { 
@@ -45,19 +48,19 @@ body {
 }
 .slideshow li:nth-child(2) { 
   background-image: url(https://dmgupcwbwy0wl.cloudfront.net/system/images/000/234/640/550aef7cb5ba76f4fdb7cc9a30afe7ad/x1000gt/winter-camping.jpg?1575468007);
-  animation-delay: 5s; 
+  animation-delay: 2s; 
 }
 .slideshow li:nth-child(3) { 
   background-image: url(https://storage.googleapis.com/chile-travel-static-content/2019/07/camping-portada-1.jpg);
-  animation-delay: 10s; 
+  animation-delay: 4s; 
 }
 .slideshow li:nth-child(4) { 
   background-image: url(https://www.pc.gc.ca/en/pn-np/nb/fundy/activ/camping/arrierepays-backcountry//pcacdn.azureedge.net/-/media/pn-np/nb/fundy/WET4/og-images-555x290/camping-arriere-pays-backcountry-555.jpg?modified=20200310175518);
-  animation-delay: 15s; 
+  animation-delay: 6s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url( https://www.holidify.com/images/cmsuploads/compressed/tent-1208201_1920_20190212172038.jpg);
-  animation-delay: 20s; 
+  background-image: url(https://images.unsplash.com/photo-1584028826939-7b98efbc3cbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
+  animation-delay: 8s; 
 }
 
 
