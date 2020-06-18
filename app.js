@@ -62,5 +62,5 @@ app.use('/campgrounds',campgroundRoutes);//takes all the routes from routes/camp
 app.use('/campgrounds/:id/comments',commentRoutes);
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
-    console.log("Campscape server Started");
+    console.log("Campscape server Started!");
 });
