@@ -19,10 +19,12 @@ Campscape is a simple website for camping enthusiasts where campers can discover
 #### Deployed version at: ##
 https://campscapee.herokuapp.com/
 
-#### Run using Command Prompt
+#### Run on terminal
 
 ```html
-  node app.js
+  npm install
+  npm start
+  then open web browser and visit the address localhost:3000
 ```
 
 #### Tech Stack:
