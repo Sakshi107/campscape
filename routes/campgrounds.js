@@ -16,7 +16,7 @@ router.get('/',function(req,res){
 	});
 });
 
-//create campground
+//create a campground
 router.post('/',middleware.isLoggedIn,function(req,res){
 	var name=req.body.name;
 	var price=req.body.price;
@@ -37,7 +37,7 @@ router.post('/',middleware.isLoggedIn,function(req,res){
 	});
 });
 
-//new-show new campground form
+//new-show new campground form page
 router.get('/new',middleware.isLoggedIn,function(req,res){
 	res.render("campgrounds/new");
 });
