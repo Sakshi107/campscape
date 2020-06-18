@@ -47,7 +47,6 @@ middlewareObj.checkCommentOwnership=function(req,res,next){
 		res.redirect('back');
 	}
 };
-
 middlewareObj.isLoggedIn=function(req,res,next){
 	if(req.isAuthenticated())
 		{
